@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleName</key>
+    <string>RokidAI</string>
+    <key>CFBundleDisplayName</key>
+    <string>Rokid AI Assistant</string>
+    <key>CFBundleIdentifier</key>
+    <string>com.rokidai.ios</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0.0</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>LSRequiresIPhoneOS</key>
+    <true/>
+    <key>UILaunchScreen</key>
+    <dict/>
+
+    <!-- Microphone for voice recording -->
+    <key>NSMicrophoneUsageDescription</key>
+    <string>Rokid AI Assistant uses the microphone to record voice commands for AI processing.</string>
+
+    <!-- Speech recognition for on-device STT -->
+    <key>NSSpeechRecognitionUsageDescription</key>
+    <string>Rokid AI Assistant uses speech recognition to transcribe voice commands.</string>
+
+    <!-- Camera for local photo capture -->
+    <key>NSCameraUsageDescription</key>
+    <string>Rokid AI Assistant can capture photos from your phone camera for AI analysis.</string>
+
+    <!-- Photo library for importing images -->
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>Rokid AI Assistant can import photos from your library for AI analysis.</string>
+
+    <!-- Local network: Wi-Fi server for glasses connection -->
+    <key>NSLocalNetworkUsageDescription</key>
+    <string>Rokid AI Assistant runs a local Wi-Fi server on port 8081 so Rokid glasses can connect and exchange messages.</string>
+    <key>NSBonjourServices</key>
+    <array>
+        <string>_rokidai._tcp</string>
+    </array>
+
+    <!-- Background audio for recordings in background -->
+    <key>UIBackgroundModes</key>
+    <array>
+        <string>audio</string>
+    </array>
+
+    <!-- Supported orientations -->
+    <key>UISupportedInterfaceOrientations</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+
+    <key>UIRequiresFullScreen</key>
+    <false/>
+</dict>
+</plist>
