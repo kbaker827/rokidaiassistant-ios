@@ -1,5 +1,11 @@
 # Rokid AI Assistant — iOS
 
+
+> **🔵 Connectivity Update — May 2025**
+> The glasses connection has been migrated from **raw TCP sockets** to
+> **Bluetooth via the Rokid AI glasses SDK** (`pod 'RokidSDK' ~> 1.10.2`).
+> No Wi-Fi port forwarding is needed. See **SDK Setup** below.
+
 iOS companion app for [RokidAIAssistant](https://github.com/liangtinglin/RokidAIAssistant) — an AI-powered voice and vision assistant for Rokid AR glasses.
 
 This is a faithful iOS port of the Android phone-side app. The glasses-side app still runs on the Rokid glasses hardware (Android); only the phone companion app has been converted.
