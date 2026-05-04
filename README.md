@@ -19,7 +19,7 @@ This is a faithful iOS port of the Android phone-side app. The glasses-side app 
 | 📷 Photo Analysis | Capture from glasses or import from library; AI image analysis |
 | 📱 Phone Mic Recording | Record from phone microphone with auto-transcription and AI analysis |
 | 💬 Conversation History | SwiftData persistence across sessions |
-| 🔌 Glasses Bridge | Wi-Fi TCP server (port 8081) — same protocol as Android app |
+| 🔌 Glasses Bridge | Bluetooth via RokidSDK — `sendMessage()`, `sendTts()`, `onAsrResult()` |
 
 ## Bluetooth / Glasses Connection
 
@@ -67,7 +67,7 @@ The only thing left for each app is filling in the three credential constants (`
 ## Architecture
 
 ```
-Rokid Glasses (Android)  ←Wi-Fi TCP:8081→  RokidAI iOS  ←HTTPS→  AI Provider APIs
+Rokid Glasses  ←Bluetooth/RokidSDK→  RokidAI iOS  ←HTTPS→  AI Provider APIs
         │                                        │
   Glasses HUD app                       GlassesConnectionManager
   (unchanged Android)                   PhoneViewModel
